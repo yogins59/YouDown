@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouDown - YouTube MP3</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #fff; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .card { background: #1e1e1e; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.5); width: 100%; max-width: 400px; text-align: center; }
+        input[type="text"] { width: 90%; padding: 12px; margin-bottom: 15px; border: 1px solid #333; border-radius: 6px; background: #2a2a2a; color: #fff; }
+        button { background: #ff0055; color: white; border: none; padding: 12px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; width: 100%; }
+        button:hover { background: #e0004c; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>YouDown</h2>
+        <form action="/download" method="POST">
+            <input type="text" name="url" placeholder="Tempel tautan YouTube di sini..." required>
+            <button type="submit">Download MP3</button>
+        </form>
+    </div>
+</body>
+</html>
